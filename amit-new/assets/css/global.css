@@ -1,0 +1,224 @@
+/* Eric Meyer's Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+*, :before, :after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	outline: none;
+	white-space: wrap;
+}
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 10px;
+}
+/*font face*/
+body {
+	font-size:100%;
+	/* font-family: 'Lato', sans-serif; */
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.2;
+	color:#000;
+	background-color: #fff;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+p{
+	font-size: 1.4rem;
+	color:#fff;
+	line-height: 1.5;
+	margin-bottom: 18px;
+	font-weight: 500;
+	font-family: 'Lato', sans-serif;
+}
+body img {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  -o-user-select: none;
+  user-select: none;          
+}
+*:focus {
+    outline: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/*
+ 2.0.3) Form Elements
+ -----------------------------*/
+button, input, optgroup, select, textarea {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+	background: #fff;
+	border: 1px solid transparent;
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+}
+ul{
+	list-style-type: none;
+}
+input,select,textarea{
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	border-radius:0;
+}
+a{
+	color:#fff;
+	text-decoration: none;
+	font-size: 1.3rem;
+	transition: all 0.4s ease-in-out;
+}
+a:hover{
+	opacity: 0.8;
+}
+a:focus{
+	outline: none;
+	border:none;
+}
+input,input:focus {
+	line-height: normal;
+	outline: none;
+}
+input:focus, select:focus, textarea:focus, button:focus {
+	/* border:none; */
+	outline: 0;
+}
+input[type="checkbox"], input[type="radio"] {
+	padding: 0;
+	border: none;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"], input[type="file"] {
+	-webkit-appearance: none;
+	cursor: pointer;
+	line-height: normal;
+	overflow: visible;
+}
+button[disabled], input[disabled] {
+	cursor: default;
+	color: #999;
+	border-color: transparent;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+    /*** iPhone and iOS Form Input Zoom Fixes ***/
+/* Fix Input Zoom on devices older than iPhone 5: */
+@media screen and (max-device-width:767px) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="tel"], input[type="url"]{ font-size: 1.6rem; /*!important;*/ }
+
+}
+/*
+ 2.0.4) List Styles
+ ---------------------------------*/
+button{
+	border:none;
+	background: transparent;
+}
+/*
+ 2.0.9) Sprite Icons
+ -------------------------*/
+[class^="icon-"], [class*="icon-"] {
+	background-image: url("../images/sprite.png");
+	background-size: 300px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 18px;
+	line-height: 14px;
+	margin-top: 0px;
+	vertical-align: middle;
+	width: 18px;
+	font-size: 0;
+}
+/*global heading*/
+h1{
+	font-size: 3.2rem;
+	margin-bottom: 10px;
+}
+h2{
+	font-size: 2.5rem;
+	margin-bottom: 18px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h1,h2,
+h4{ }
+h5{}
+h6{}
+h1,h2,h3{
+	font-weight:900;
+	color:#fff;
+	line-height: 1;
+}
+h3{
+	font-size: 1.8rem;
+	color: #000;
+	text-align: center;
+	margin-bottom: 7px;
+}
+/*global btn*/
+.btn{
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: #000;
+	background-color: #edd638;
+	border-radius: 5px;
+	padding: 11px 40px;
+	display: inline-block;
+	transition: all 0.5s ease-in-out;
+}
+.btn:hover{
+	background-color: #000;
+	color:#edd638;
+	opacity: 1;
+}
+/* Containers*/
+.container {
+    max-width: 1242px;
+    width: 100%;
+    margin: 0 auto;
+	padding: 0 15px;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+
+
+
+
+
